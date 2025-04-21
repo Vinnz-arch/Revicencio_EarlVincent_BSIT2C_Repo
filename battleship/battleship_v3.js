@@ -18,7 +18,7 @@ while (isSunk == false) {
         break;
     }
 
-    guess = parseInt(guessm, 10);
+    guess = parseInt(guess, 10);
     // convert input to a number base 10
     
     if (isNaN(guess) || guess < 0 || guess > 6) {
@@ -44,5 +44,5 @@ while (isSunk == false) {
 }
 
 var accuracy = (guesses > 0 ? (hits / guesses) * 100 : 0).toFixed(2);
-var stats = "You Took" + guesses + "guesses to sink the battleship!\n" + "Accuracy:" + accuracy + "%";
+var stats = "You Took " + guesses + " guesses to sink the battleship!\n" + "Accuracy: " + accuracy + "%";
 alert(stats);
